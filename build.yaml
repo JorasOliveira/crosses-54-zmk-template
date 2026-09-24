@@ -20,3 +20,8 @@ include:
   - board: nice_nano//zmk
     shield: settings_reset
     artifact-name: settings_reset
+  - board: nice_nano//zmk
+    shield: crosses_left
+    artifact-name: crosses_54_left_internal_osc_usb_logging
+    snippet: zmk-usb-logging
+    cmake-args: -DCONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y
