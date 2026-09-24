@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: Good-Great-Grand-Wonderful
       url-base: https://github.com/Good-Great-Grand-Wonderful
+    - name: efogdev
+      url-base: https://github.com/efogdev
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,5 +17,10 @@ manifest:
       remote: Good-Great-Grand-Wonderful
       revision: zephyr-4.1
       import: config/west.yml
+    # Overrides the version imported from gggw-zmk-keebs: the zmk-0.4 branch
+    # has the zmk_endpoint_get_selected() rename needed by this ZMK revision.
+    - name: zmk-report-rate-limit
+      remote: efogdev
+      revision: 60b18f6e55e891956c53a393728b2e9f0834a9de
   self:
     path: config
