@@ -3,20 +3,20 @@ include:
   - board: nice_nano//zmk
     shield: crosses_left
     artifact-name: crosses_54_left
-    cmake-args: -DEXTRA_DTC_OVERLAY_FILE=../../config/crosses_nice_nano.overlay
   - board: nice_nano//zmk
     shield: crosses_right
     artifact-name: crosses_54_right
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DEXTRA_DTC_OVERLAY_FILE=../../config/crosses_nice_nano.overlay
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
   - board: nice_nano//zmk
     shield: crosses_left
     artifact-name: crosses_54_left_internal_osc
-    cmake-args: -DCONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y -DEXTRA_DTC_OVERLAY_FILE=../../config/crosses_nice_nano.overlay
+    cmake-args: -DCONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y
   - board: nice_nano//zmk
     shield: crosses_right
     artifact-name: crosses_54_right_internal_osc
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y -DEXTRA_DTC_OVERLAY_FILE=../../config/crosses_nice_nano.overlay
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y
   - board: nice_nano//zmk
     shield: settings_reset
+    artifact-name: settings_reset

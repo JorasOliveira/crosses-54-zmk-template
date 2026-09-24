@@ -1,6 +1,6 @@
 // Copy of gggw-zmk-keebs boards/shields/crosses/boards/nice_nano.overlay.
-// Zephyr only auto-applies that file for board "nice_nano", not "nice_nano//zmk",
-// so build.yaml passes this one via EXTRA_DTC_OVERLAY_FILE instead.
+// Zephyr only auto-applies that file for board "nice_nano", not "nice_nano//zmk";
+// ZMK loads it from the config dir automatically (matched by shield + board name).
 
 #include <dt-bindings/zmk/input_transform.h>
 
